@@ -3,4 +3,5 @@
     margin: 20px;
     width: 40rem;
     background: #f2ededeb;
+    display: grid;
   }

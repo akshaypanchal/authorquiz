@@ -1,28 +1,29 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 20px;
+}
+
+
 .options{
     
-    display: inline-block;
+    
     margin-left: 230px;
     width: 32.5rem;
     background-color: #c4e8f2;
-    padding: 0px;
     border-left: 3px black solid;
     line-height: 1.5;
     cursor: pointer;
-  }
-  .options, h1{
-      margin-left: 5px;
-  }
-  .btn{
-      width: 100%;
-  }
-  .btn1{
-      margin-left: 39%;
-      margin-top: 5%;
-  }
-  .btn:hover{
-      background-color: blue;
+    margin: 2px;
   }
 
-  .btn1:hover{
-    background-color: blue;
+.author{
+    text-align: left;
+    font-size: large;
+    
+    
+}
+
+.button{
+    width: fit-content;
 }
