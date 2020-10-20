@@ -33,6 +33,8 @@ class App extends React.Component{
 
   }
 
+
+  // declare function to pass each state objects to Option Component for rendering
    renderStateObjects = ()=>{
      let optionComponentArray = this.state.map(obj=>{
        return <Option author={obj.author} options={obj.options} answer={obj.answer}/>;
@@ -49,8 +51,8 @@ class App extends React.Component{
         <div>
           <Header />
           <Question question = {this.state.question}  />
+          {/* Rendering all options and author name with the help of map method */}
           {this.renderStateObjects()}
-          {/* <Option author = {this.state.author} options={this.state.options} answer={this.state.answer}/> */}
         </div>
 
     );

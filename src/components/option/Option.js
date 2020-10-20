@@ -9,17 +9,18 @@ function Option({author, options, answer}){
     let colorChangedElement;
 
     // function for option selection and change the background color to blue
-    function optionSelected(item){
+    const optionSelected = (item)=>{
 
          colorChangedElement =  document.getElementById(item);
+
+        //Checking the condition if button is clicked previously or not  
        if(btnClickFlag)
        {
-            colorChangedElement.style.backgroundColor="blue";
+            colorChangedElement.style.backgroundColor="blue";   
             selectedOption=item;
             btnClickFlag=false;
        }
        else{
-        
         colorChangedElement.style.backgroundColor = "#c4e8f2";
         btnClickFlag=true;
 
